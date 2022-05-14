@@ -21,6 +21,7 @@ The CSV provided had 3 columns: Ballot ID, County, and Candidate. To obtain the 
   
 
 ## Election Audit Results
+![Election Analysis Results](Analysis/election_analysis.png)
 
 ## Election Audit Summary
 
