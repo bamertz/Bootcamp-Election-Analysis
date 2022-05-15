@@ -31,7 +31,8 @@ The election results CSV is located in the Resources folder.
         votes = candidate_votes[candidate_name]
         # Calculate the percentage of votes.
         vote_percentage = float(votes) / float(total_votes) * 100
-        
+ `
+ 
 4.  The total number of votes 
     * Charles Casper Stockham was 85,213. 
     * Diana DeGette was 272,892. 
@@ -48,7 +49,7 @@ The election results CSV is located in the Resources folder.
         votes = county_votes[county_name]
         # Calculate the percentage of votes.
         vote_percentage = float(votes) / float(total_votes) * 100
-        
+ `       
 6.  The voter turnout
     * Jefferson County was 38,855.
     * Denver County was 306,055.
@@ -67,7 +68,7 @@ The election results CSV is located in the Resources folder.
           highest_votes_percentage = vote_percentage
           # And, set the winning_candidate equal to the candidate's name.
           highest_turnout_county = county_name
-            
+ `           
 8.  The county with the highest voter turnout was Denver County.
 
 `  # Determine winning vote count and candidate
@@ -79,7 +80,7 @@ The election results CSV is located in the Resources folder.
           winning_percentage = vote_percentage
           # And, set the winning_candidate equal to the candidate's name.
           winning_candidate = candidate_name
-          
+ `         
 10.  The winner of the election based on popular vote was Dianne DeGette. 
 
 ## Election Audit Results
