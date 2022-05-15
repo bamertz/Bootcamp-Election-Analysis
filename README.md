@@ -51,6 +51,7 @@ The election results CSV is located in the Resources folder.
         # Calculate the percentage of votes.
         vote_percentage = float(votes) / float(total_votes) * 100
  `       
+ 
 6.  The voter turnout
     * Jefferson County was 38,855.
     * Denver County was 306,055.
@@ -96,6 +97,7 @@ The results above are a snippet of the text file created in the code. This shows
 The Election Audit Analysis Project can be modified to be used in future election analysis by updating the following:
 
 1. The CSV file of the election results and updating the file path.
+
 `file_to_load = os.path.join("Election-Analysis","Resources", "election_results.csv")`
 
 2. The descriptions and titles for election specific items, such as changing counties to states.
