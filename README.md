@@ -37,6 +37,7 @@ The election results CSV is located in the Resources folder.
     * Charles Casper Stockham was 85,213. 
     * Diana DeGette was 272,892. 
     * Raymon Anthony Doane was 11,606.
+    
 5.  The total vote percentage
     * Charles Casper Stockham was 23.0%. 
     * Diana DeGette was 73.8%. 
@@ -54,6 +55,7 @@ The election results CSV is located in the Resources folder.
     * Jefferson County was 38,855.
     * Denver County was 306,055.
     * Arapahoe County was 24,801.
+    
 7.  The voter percentage
     * Jefferson County was 10.5%.
     * Denver County was 82.8%.
@@ -68,7 +70,8 @@ The election results CSV is located in the Resources folder.
           highest_votes_percentage = vote_percentage
           # And, set the winning_candidate equal to the candidate's name.
           highest_turnout_county = county_name
- `           
+ `       
+ 
 8.  The county with the highest voter turnout was Denver County.
 
 `  # Determine winning vote count and candidate
@@ -81,16 +84,20 @@ The election results CSV is located in the Resources folder.
           # And, set the winning_candidate equal to the candidate's name.
           winning_candidate = candidate_name
  `         
+ 
 10.  The winner of the election based on popular vote was Dianne DeGette. 
 
 ## Election Audit Results
 ![Election Analysis Results](Analysis/election_analysis.png)
+
 The results above are a snippet of the text file created in the code. This shows all relevant information detailed in the analysis. 
 
 ## Election Audit Summary
 The Election Audit Analysis Project can be modified to be used in future election analysis by updating the following:
+
 1. The CSV file of the election results and updating the file path.
 `file_to_load = os.path.join("Election-Analysis","Resources", "election_results.csv")`
+
 2. The descriptions and titles for election specific items, such as changing counties to states.
 
 `  county_options = []
@@ -99,4 +106,5 @@ The Election Audit Analysis Project can be modified to be used in future electio
    highest_votes_county = 0
    votes_per_county = 0
 `
+
 These are just examples of what can be used. An easy way to do this would be by Control Find & Replacing the word "County" with the word "State."
