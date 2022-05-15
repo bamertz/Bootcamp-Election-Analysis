@@ -54,7 +54,7 @@ The Election Audit Analysis Project can be modified to be used in future electio
 
 `  # County Options List
    county_options = []
-   # County Votes Dictionary
+   # County Votes
    county_votes = {}
 
    #Track the highest turnout per county and percentage
