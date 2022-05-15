@@ -18,7 +18,6 @@ The CSV provided had 3 columns: Ballot ID, County, and Candidate. To obtain the 
 The election results CSV is located in the Resources folder.
 
 ## Analysis
-
 1.  The total number of votes cast was 369,711.
 2.  The complete list of candidates who received votes:
     * Charles Casper Stockham
@@ -43,8 +42,6 @@ The election results CSV is located in the Resources folder.
 8.  The county with the highest voter turnout was Denver County.
 9.  The winner of the election based on popular vote was Dianne DeGette. 
 
-  
-
 ## Election Audit Results
 ![Election Analysis Results](Analysis/election_analysis.png)
 The results above are a snippet of the text file created in the code. This shows all relevant information detailed in the analysis. 
@@ -53,4 +50,16 @@ The results above are a snippet of the text file created in the code. This shows
 The Election Audit Analysis Project can be modified to be used in future election analysis by updating the following:
 1. The CSV file of the election results and updating the file path.
 `file_to_load = os.path.join("Election-Analysis","Resources", "election_results.csv")`
-2. 
+2. The descriptions and titles for election specific items, such as changing counties to states.
+
+`# County Options List
+county_options = []
+# County Votes Dictionary
+county_votes = {}
+
+#Track the highest turnout per county and percentage
+highest_turnout_county = ""
+highest_votes_county = 0
+votes_per_county = 0`
+
+These are just examples of what can be used. An easy way to do this would be by Control Find & Replacing the word "County" with the word "State."
