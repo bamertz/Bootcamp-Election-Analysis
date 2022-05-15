@@ -33,12 +33,12 @@ The election results CSV is located in the Resources folder.
         vote_percentage = float(votes) / float(total_votes) * 100
  `
  
-4.  The total number of votes 
+3.  The total number of votes 
     * Charles Casper Stockham was 85,213. 
     * Diana DeGette was 272,892. 
     * Raymon Anthony Doane was 11,606.
     
-5.  The total vote percentage
+4.  The total vote percentage
     * Charles Casper Stockham was 23.0%. 
     * Diana DeGette was 73.8%. 
     * Raymon Anthony Doane was 3.1%.
@@ -52,12 +52,12 @@ The election results CSV is located in the Resources folder.
         vote_percentage = float(votes) / float(total_votes) * 100
  `       
  
-6.  The voter turnout
+5.  The voter turnout
     * Jefferson County was 38,855.
     * Denver County was 306,055.
     * Arapahoe County was 24,801.
     
-7.  The voter percentage
+6.  The voter percentage
     * Jefferson County was 10.5%.
     * Denver County was 82.8%.
     * Arapahoe County was 6.7%.
@@ -73,7 +73,7 @@ The election results CSV is located in the Resources folder.
           highest_turnout_county = county_name
  `       
  
-8.  The county with the highest voter turnout was Denver County.
+7.  The county with the highest voter turnout was Denver County.
 
 `  # Determine winning vote count and candidate
       # Determine if the votes is greater than the winning count.
@@ -86,7 +86,7 @@ The election results CSV is located in the Resources folder.
           winning_candidate = candidate_name
  `         
  
-10.  The winner of the election based on popular vote was Dianne DeGette. 
+8.  The winner of the election based on popular vote was Dianne DeGette. 
 
 ## Election Audit Results
 ![Election Analysis Results](Analysis/election_analysis.png)
