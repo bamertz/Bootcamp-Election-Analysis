@@ -23,6 +23,15 @@ The election results CSV is located in the Resources folder.
     * Charles Casper Stockham
     * Diana DeGette
     * Raymon Anthony Doane.
+
+`   # Determine the percentage of votes for each candidate by looping through the counts.
+    # Iterate through the candidate list.
+    for candidate_name in candidate_votes:
+        # Retrieve vote count of a candidate.
+        votes = candidate_votes[candidate_name]
+        # Calculate the percentage of votes.
+        vote_percentage = float(votes) / float(total_votes) * 100
+        
 4.  The total number of votes 
     * Charles Casper Stockham was 85,213. 
     * Diana DeGette was 272,892. 
@@ -31,6 +40,15 @@ The election results CSV is located in the Resources folder.
     * Charles Casper Stockham was 23.0%. 
     * Diana DeGette was 73.8%. 
     * Raymon Anthony Doane was 3.1%.
+
+`   # Determine the percentage of votes for each county by looping through the counts.
+    # Iterate through the county list.
+    for county_name in county_votes:
+        # Retrieve vote count of a county.
+        votes = county_votes[county_name]
+        # Calculate the percentage of votes.
+        vote_percentage = float(votes) / float(total_votes) * 100
+        
 6.  The voter turnout
     * Jefferson County was 38,855.
     * Denver County was 306,055.
@@ -39,8 +57,30 @@ The election results CSV is located in the Resources folder.
     * Jefferson County was 10.5%.
     * Denver County was 82.8%.
     * Arapahoe County was 6.7%.
+
+`     # Determine winning vote count and county
+      # Determine if the votes is greater than the winning count.
+      if (votes > highest_votes_county) and (vote_percentage > highest_votes_percentage):
+          # If true then set winning_count = votes and winning_percent =
+          # vote_percentage.
+          highest_votes_count = votes
+          highest_votes_percentage = vote_percentage
+          # And, set the winning_candidate equal to the candidate's name.
+          highest_turnout_county = county_name
+            
 8.  The county with the highest voter turnout was Denver County.
-9.  The winner of the election based on popular vote was Dianne DeGette. 
+
+`  # Determine winning vote count and candidate
+      # Determine if the votes is greater than the winning count.
+      if (votes > winning_count) and (vote_percentage > winning_percentage):
+          # If true then set winning_count = votes and winning_percent =
+          # vote_percentage.
+          winning_count = votes
+          winning_percentage = vote_percentage
+          # And, set the winning_candidate equal to the candidate's name.
+          winning_candidate = candidate_name
+          
+10.  The winner of the election based on popular vote was Dianne DeGette. 
 
 ## Election Audit Results
 ![Election Analysis Results](Analysis/election_analysis.png)
@@ -52,12 +92,8 @@ The Election Audit Analysis Project can be modified to be used in future electio
 `file_to_load = os.path.join("Election-Analysis","Resources", "election_results.csv")`
 2. The descriptions and titles for election specific items, such as changing counties to states.
 
-`  # County Options List
-   county_options = []
-   # County Votes
+`  county_options = []
    county_votes = {}
-
-   #Track the highest turnout per county and percentage
    highest_turnout_county = ""
    highest_votes_county = 0
    votes_per_county = 0
