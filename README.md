@@ -52,14 +52,14 @@ The Election Audit Analysis Project can be modified to be used in future electio
 `file_to_load = os.path.join("Election-Analysis","Resources", "election_results.csv")`
 2. The descriptions and titles for election specific items, such as changing counties to states.
 
-`# County Options List
-county_options = []
-# County Votes Dictionary
-county_votes = {}
+`  # County Options List
+   county_options = []
+   # County Votes Dictionary
+   county_votes = {}
 
-#Track the highest turnout per county and percentage
-highest_turnout_county = ""
-highest_votes_county = 0
-votes_per_county = 0`
-
+   #Track the highest turnout per county and percentage
+   highest_turnout_county = ""
+   highest_votes_county = 0
+   votes_per_county = 0
+`
 These are just examples of what can be used. An easy way to do this would be by Control Find & Replacing the word "County" with the word "State."
